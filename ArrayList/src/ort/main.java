@@ -91,6 +91,33 @@ public class main
 			 System.out.print("Apellido: "+empleadoBuscado.getApellido()+"   ");
 			 System.out.println("Dni: "+empleadoBuscado.getDni()+"   ");  
 		 }	 
+		 
+		 System.out.println("");
+		 System.out.println("");  
+		 System.out.println("");
+		 System.out.print("El empleado buscado es: ");
+		 System.out.println("");
+		 
+		
+		Personal empleadoBuscado = null;
+		int indice = 0;
+	
+		while (indice < empleados.size() && empleadoBuscado == null) 
+		{
+			if (Integer.parseInt(empleados.get(indice).getDni()) == 43789654) 
+			{
+				empleadoBuscado = empleados.get(indice);
+				System.out.print("Posicón: "+ empleados.indexOf(empleadoBuscado)+"   ");
+				System.out.print("Nombre: "+empleadoBuscado.getNombre()+"   "); 
+				System.out.print("Apellido: "+empleadoBuscado.getApellido()+"   ");
+				System.out.println("Dni: "+empleadoBuscado.getDni()+"   ");  	
+			}
+			else 
+			{
+				
+				indice++;
+			}
+		}
 		 	
 	}
 
